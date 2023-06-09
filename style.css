@@ -90,7 +90,7 @@ body{
   }
   #timer{
     position:fixed;
-    top:220px;
+    top:260px;
     color: rgb(124, 115, 199);
     border: 1px solid rgb(124, 115, 199);
     padding:3px;
@@ -170,7 +170,7 @@ body{
 
 #delete-message{
   position: relative;
-  top: -200px;
+  top: -350px;
   z-index: 10;
   color: rgb(226, 49, 49);
   font-size: 24px;
