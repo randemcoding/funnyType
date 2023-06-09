@@ -1,0 +1,177 @@
+body{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:98vw;
+    height:88vh;
+    letter-spacing: .1rem;
+    font-size: 24px;
+    font-weight: 100;
+    background-color: rgb(71, 69, 69);
+}
+#main-container{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 42, 44);
+    width:100%;
+    max-width: 998px;
+    height:55vh;
+    text-align:left;
+    position: relative;
+    top: 129px;
+    left: 0px;
+    margin:5px;
+}
+.button:hover{
+  transform:scale(1.1)
+}
+
+#overlay-text{
+    position:fixed;
+    top: 430px;
+    font-family: 'Play', sans-serif;
+    
+    color: rgb(124, 115, 199);
+    font-weight:700;
+    z-index: 1;
+    width: 600px;
+
+}
+#sentence {
+    position:fixed;
+    top: 430px;
+    font-family: 'Play', sans-serif;
+    font-weight:600;
+    color:rgb(134, 131, 138);
+    width: 600px;
+    filter: blur(3px);
+}
+#text-input{
+    position:fixed;
+    background-color: aqua;
+    top: 0px;
+    opacity: 0;
+    width: 500px;
+}
+.correct{
+    color:rgb(121, 40, 226); 
+}
+.incorrect {
+    color: red;
+}
+.blink {
+    display: inline-block;
+    width: 0.3em;
+    height: 1em;
+    background-color: black;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  #reset {
+    position: relative;
+    top:-285px;
+    z-index:1;
+    font-family: 'Courier New', Courier, monospace;
+    color:beige;
+  }
+  .scores{
+    position: relative;
+    color:rgb(209, 185, 133);
+    top:200px;
+    line-height: .1;
+  }
+  #timer{
+    position:fixed;
+    top:180px;
+    color: rgb(124, 115, 199);
+    border: 1px solid rgb(124, 115, 199);
+    padding:3px;
+    border-radius: 3px;
+    z-index:2;
+  }
+  #header{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left:0px;
+    top: 0px;
+    background-color: rgb(30, 30, 30);
+
+    color: rgb(124, 115, 199);
+    width: 100%;
+    height: 11%;
+    font-size:100px;
+    font-family: 'Play', sans-serif;
+  }
+  #options-bar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left:0px;
+    top: 11%;
+    background-color: rgb(124, 115, 199);
+    color: rgb(226, 158, 80);
+    width: 100%;
+    height: 5%;
+    font-size:20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(65, 54, 54);
+    color:rgb(134, 156, 218);
+    margin: 10px;
+    height: 50px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    width: 63px;
+  }
+
+  #footer-container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:7%;
+    background-color: rgb(30, 30, 30);
+    color: rgb(124, 115, 199);
+
+    font-size:20px;
+    text-align:center;
+    position:fixed;
+    bottom: 0px;
+    left:0px;
+    z-index:0;
+    font-family: 'Righteous', cursive;
+}
+.nav-bar-text2 {
+  background-color: rgb(30, 30, 30);
+  color: rgb(124, 115, 199);
+
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    width:50%;
+    text-decoration:none;
+}
+
+#delete-message{
+  position: relative;
+  top: -200px;
+  z-index: 10;
+  color: rgb(226, 49, 49);
+  font-size: 24px;
+}
