@@ -1,19 +1,45 @@
 body{
     display: inline-flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width:98vw;
-    height:88vh;
+    height:98vh;
     letter-spacing: .1rem;
     font-size: 24px;
     font-weight: 100;
     background-color: rgb(71, 69, 69);
 }
+#header{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left:0px;
+  top: 0px;
+  background-color: rgb(30, 30, 30);
+  color: rgb(124, 115, 199);
+  width: 100%;
+  height: 11%;
+  font-size:100px;
+  font-family: 'Play', sans-serif;
+}
+#options-bar {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left:0px;
+  top: 11%;
+  background-color: rgb(124, 115, 199);
+  color: rgb(226, 158, 80);
+  width: 100%;
+  height: 5%;
+  font-size:20px;
+  font-family: 'Courier New', Courier, monospace;
+}
 #main-container{
     display: inline-flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: rgb(43, 42, 44);
     width:100%;
@@ -21,7 +47,7 @@ body{
     height:55vh;
     text-align:left;
     position: relative;
-    top: 129px;
+    top: 22%;
     left: 0px;
     margin:5px;
 }
@@ -31,7 +57,7 @@ body{
 
 #overlay-text{
     position:fixed;
-    top: 500px;
+    top: 35%;
     font-family: 'Play', sans-serif;
     
     color: rgb(124, 115, 199);
@@ -42,7 +68,7 @@ body{
 }
 #sentence {
     position:fixed;
-    top: 500px;
+    top: 35%;
     font-family: 'Play', sans-serif;
     font-weight:600;
     color:rgb(134, 131, 138);
@@ -89,43 +115,14 @@ body{
     line-height: .1;
   }
   #timer{
-    position:fixed;
-    top:260px;
+    position:relative;
+    top: 0px;
     color: rgb(124, 115, 199);
     border: 1px solid rgb(124, 115, 199);
     padding:3px;
     border-radius: 3px;
-    z-index:2;
   }
-  #header{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    left:0px;
-    top: 0px;
-    background-color: rgb(30, 30, 30);
-
-    color: rgb(124, 115, 199);
-    width: 100%;
-    height: 11%;
-    font-size:100px;
-    font-family: 'Play', sans-serif;
-  }
-  #options-bar {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    left:0px;
-    top: 11%;
-    background-color: rgb(124, 115, 199);
-    color: rgb(226, 158, 80);
-    width: 100%;
-    height: 5%;
-    font-size:20px;
-    font-family: 'Courier New', Courier, monospace;
-  }
+  
   .button{
     display: inline-flex;
     justify-content: center;
@@ -169,8 +166,8 @@ body{
 }
 
 #delete-message{
-  position: relative;
-  top: -350px;
+  position: fixed;
+  top: 25%;
   z-index: 10;
   color: rgb(226, 49, 49);
   font-size: 24px;
